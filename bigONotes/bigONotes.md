@@ -63,3 +63,10 @@
 ## Drop the less significant terms
 - if we have an algorithm that adds:
 - O(n + n^2) we'll just call it O(n^2) because the O(n) becomes less significant as *n* gets larger.
+
+---
+## Being explicit with best and worst case big O
+- if we're looking for an element in an array
+- O(n) could be worst case : if found at index[-1]
+- O(1) could be best case : if found at index[0]
+- Sometimes being explicit gives you brownie points
