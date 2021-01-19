@@ -78,3 +78,8 @@
 When you want to optimize for using less memory instead of less time.
 - When talking about space complexity it's about *additional* space, and not the space taken up by the inputs
 - Sometimes there's a tradeoff between saving time and saving space
+---
+### LINKS
+[What is Big O Notation Explained: Space and Time Complexity](https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/)
+
+[YT Video: HackerRank Big O Notation ](https://www.youtube.com/watch?v=v4cd1O4zkGw)
