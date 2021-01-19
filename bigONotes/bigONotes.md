@@ -1,5 +1,7 @@
 # Data Structures & Algorithm Notes
 
+![Big O Graph](https://danielmiessler.com/images/big-o-chart-tutorial-bazar-aymptotic-notations-1.png)
+
 ## Big O Notation (asymptotic analysis)
 
 ### expresses runtime by *how quickly it grows relative to the input as the input gets arbitrarily large*
@@ -70,3 +72,9 @@
 - O(n) could be worst case : if found at index[-1]
 - O(1) could be best case : if found at index[0]
 - Sometimes being explicit gives you brownie points
+
+---
+## Space complexity
+When you want to optimize for using less memory instead of less time.
+- When talking about space complexity it's about *additional* space, and not the space taken up by the inputs
+- Sometimes there's a tradeoff between saving time and saving space
