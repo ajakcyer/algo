@@ -57,9 +57,16 @@ let values = [true, {}, [], 2, "awesome"]
     - When you need fast access / inseration and removal (sort of fast..)
 
     Insertion - it depends
-    Removal - depends
-    Searching - O(n)
+        - Adding to end of array is O(1) -> do not have to re-indexing the elements (Push)
+        - Adding to beginning of array is O(n) -> Will HAVE to re-index all the elements in the array (unshift)
+
+    Removal - it depends
+        - Removing from end of array is O(1) -> do not have to re-indexing the elements (Pop)
+        - Removing from beginning of array is O(n) -> Will HAVE to re-index all the elements in the array (shift)
+
     Access - O(1)
+    
+    Searching - O(n)
 
 
 */
