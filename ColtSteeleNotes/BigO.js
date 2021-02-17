@@ -140,3 +140,21 @@ printAllPairs(4)
     As n grows larger, the runtime grows QUADRATICALLY (n^2)
 
 */
+
+
+
+/*
+        RULE OF THUMB: Simplifying Big O Expressions
+
+    - Constants don't matter
+        O(2n) -> Simplify To -> O(n)
+        O(500) -> Simplify To -> O(1) (constant number of operations, chart will be flat)
+        O(13n^2) -> Simplify To -> O(n^2) (chart will look similiar with n^2 or 13n^2 once chart is elongated)
+
+    - Smaller terms don't matter
+        O(n + 10) -> Simplify To -> O(n)
+        O(1000n + 50) -> Simplify To -> O(n)
+        O(n^2 + 5n + 8) -> Simplify To -> O(n^2) (WHAT REALLY MATTERS IS THE n^2, 5*100 is 500, BUT 5*100^2 is BIG NUMBER)
+
+
+*/
