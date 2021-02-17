@@ -8,6 +8,8 @@
 */
 
 
+
+
 let instructor = {
     firstName: "Kelly",
     isInstructor: true,
@@ -18,13 +20,15 @@ let instructor = {
                     OBJECTS
                     -------
     
-    - unordered data structures stored in key value pairs
-
+    - UNORDERED data structures stored in key value pairs
     - work well when you don't need order
-
     - works fast access / insertion and removal
-
     - time complexity of O(1) -> CONSTANT TIME
 
+    Insertion - O(1)
+    Removal - O(1)
+    Access - O(1)
+    Searching - O(n)
 
+    When you don't need order - objects are a great choice
 */
