@@ -47,4 +47,24 @@ let instructor = {
 
 
 
+let names = ["Michael", "Melissa", "Andrea"]
+let values = [true, {}, [], 2, "awesome"]
 
+/*
+                ARRAYS
+                ------
+    - ORDERED lists -> Each el has an index associated with them
+    - When you need fast access / inseration and removal (sort of fast..)
+
+    Insertion - it depends
+    Removal - depends
+    Searching - O(n)
+    Access - O(1)
+
+
+*/
+
+/*
+            Big O of ARRAYS
+
+*/
