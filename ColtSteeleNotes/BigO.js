@@ -66,10 +66,10 @@ function addUpTo(n) {
 
 
 let t1 = performance.now()
-console.log(addUpTo(100000000)) // gives me 6
+// console.log(addUpTo(100000000))
 let t2 = performance.now()
 
-console.log(`Time Elapsed: ${(t2-t1) / 1000} seconds`)
+// console.log(`Time Elapsed: ${(t2-t1) / 1000} seconds`)
 /*
         performance gives us the time it is
 t2 (time after func) - t1 (time before func) / 1000 (to go from milliseconds to seconds)
@@ -129,7 +129,7 @@ function printAllPairs(n){
     }
 }
 
-printAllPairs(4)
+// printAllPairs(4)
 
 /* 
     # of Operations
@@ -158,3 +158,49 @@ printAllPairs(4)
 
 
 */
+
+
+/*
+        Big O Shorthands
+
+    1. Arithmetic operations are constant time (add/subtracting/dividing/multiplying)
+    2. Variable assignment is constant (x=1 and x=100000 is roughly same time)
+    3. Accessing elements in an array (by index array[3]) or object (by key object[key]) is constant runtime
+    4. In a loop, complexity is the length of the complexity times the complexity INSIDE the loop (loop inside loop is O(n) * O(n) = O(n^2))
+
+
+*/
+
+function logAtLeast5(n){
+    for (let i = 0; i <= Math.max(5, n); i++){
+        console.log(i)
+    }
+}
+
+/*
+    Big O here?
+    Loop - O(n)
+    5 - O(1)
+    5 only matters if n is small and will run 5 times constant, but if n grows towards infinitely the loop will run n times
+    Big O is O(n)
+*/
+// console.log(logAtLeast5(2))
+
+
+function logAtMost5(n){
+    for (let i = 0; i <= Math.min(5, n); i++){
+        console.log(i)
+    }
+}
+
+/*
+    Big O here?
+    As n grows here, it doesn't matter because we are only taking the min of 5 operations.
+    If n is 2 then we are only doing 2 operations
+
+    O(5) in worst case scenario
+    O(1) simplified
+
+*/
+
+console.log(logAtMost5(2))
