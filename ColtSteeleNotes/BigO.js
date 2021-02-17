@@ -35,7 +35,7 @@ function addUpTo(n) {
 
     Regardless of the exact number, the general trend is "As n grows, the # of operations grow roughly in proportion to n"
 
-    
+
     Number of operations is bounded by a multiple of n (say, 10n)
     O(n)
 
@@ -118,5 +118,25 @@ GIVES US THE TIME ELAPSED
     f(n) could be quadratic ( f(n) = n^2 )
     f(n) could be constant ( f(n) = 1)
     f(n) could be something entirely different
+
+*/
+
+function printAllPairs(n){
+    for (let i = 0; i < n; i++){
+        for (let j = 0; j < n; j++){
+            console.log(i, j)
+        }
+    }
+}
+
+printAllPairs(4)
+
+/* 
+    # of Operations
+    O(n) nested inside of O(n)
+
+    - O(n^2)
+
+    As n grows larger, the runtime grows QUADRATICALLY (n^2)
 
 */
