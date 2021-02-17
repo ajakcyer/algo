@@ -270,4 +270,59 @@ function double(arr){
 
         Logarithms
 
+    - Some algorithms involve complex mathematical expressions - logarithms come up a lot.
+    - O( log n)
+
+
+    A logarithm is the inverse of an exponent.
+
+    log 2 (8) = 3      --> 2 to what power gives us 8? ---> 2^3 = 8
+
+    log 2 (value) = exponent    -----> 2^exponent = value
+
+
+    log is not always base 2 sometimes it's base 3 or e or 10
+    - primarily 2 (binary)
+
+    log === log 2   (to simplify)
+    
+    Comparing the graph of O(1), O(n), O(n^2) it doesn't matter if it's log 2 / log 3 / log 10
+
+
+                RULE OF THUMB
+        
+        The logarithm of a number roughly measures the number of times you can divide
+        that number by 2 before you get a value that less than or equal to one
+
+
+        8
+        /2      1
+        4
+        /2      2
+        2
+        /2      3
+        1
+        log (8) = 3
+
+
+        25
+        /2      1
+        12.5    
+        /2      2
+        6.25
+        /2      3
+        3.125
+        /2      4
+        1.5625
+        /2      5
+        0.78125
+
+        (somewhere between 4 and 5)
+
+        log (25) = 4.64
+
+
+
+        Logarithm time complexity O(log n) is GREAT
+
 */
