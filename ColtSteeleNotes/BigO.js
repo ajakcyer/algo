@@ -192,6 +192,7 @@ function logAtMost5(n){
         console.log(i)
     }
 }
+// console.log(logAtMost5(2))
 
 /*
     Big O here?
@@ -203,4 +204,70 @@ function logAtMost5(n){
 
 */
 
-console.log(logAtMost5(2))
+// So far we've been focusing on TIME COMPLEXITY and analyzing the RUNTIME of an algorithm as size of inputs (n) increased
+
+/*
+        SPACE COMPLEXITY
+
+    - the amount of memory taken up in order to run the code in our algorithm
+
+    - auxiliary space complexity refers to the space required by the algorithm ONLY.
+        - NOT THE SPACE TAKEN BY THE INPUTS
+    - what happens inside the algo
+
+
+
+        RULES OF THUMB: Space Complexity
+
+    - Most primatives (booleans, numbers, undefined, null) are constant space. O(1)
+        - size of input doesn't matter because it's taking up the same amount of space
+    - Strings require O(n) space where n is the string length (50 character string takes up 50 times more space than single character string)
+    - Reference types Arrays (length) and Object (number of keys) are O(n) (if length of array is 1 compared to 2 it takes up 2x more space)
+
+*/
+
+function sum(arr){
+    let total = 0;
+    for (let i = 0; i < arr.length; i++){
+        total += arr[i]
+    }
+    
+    return total
+}
+
+/*
+        Space Big O
+
+    Variable called total = 0 (number) O(1)
+    variable called i = 0 (number) O(1)
+    adding to total variable doesn't change the space, it's already there
+
+    O(1)
+
+*/
+
+
+function double(arr){
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++){
+        newArr.push(2 * arr[i])
+    }
+    return newArr
+}
+
+/*
+        Space Big O
+    
+    newArray variable is getting longer and longer directly proportionate to the input array (n)
+    O(1) (from newArray = [] )
+    O(1) (from let i=0)
+    O(n) (from pushing elements into array from the length of the input array)
+    
+*/
+
+
+/*
+
+        Logarithms
+
+*/
