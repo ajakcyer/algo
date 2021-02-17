@@ -6,3 +6,25 @@
     - Compare and contrast the runtime for arrays and objects, as well as built-in methods
 
 */
+
+
+let instructor = {
+    firstName: "Kelly",
+    isInstructor: true,
+    favoriteNumbers: [1,2,3,4]
+}
+
+/*
+                    OBJECTS
+                    -------
+    
+    - unordered data structures stored in key value pairs
+
+    - work well when you don't need order
+
+    - works fast access / insertion and removal
+
+    - time complexity of O(1) -> CONSTANT TIME
+
+
+*/
