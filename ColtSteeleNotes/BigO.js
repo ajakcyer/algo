@@ -326,3 +326,10 @@ function double(arr){
         Logarithm time complexity O(log n) is GREAT
 
 */
+
+/*
+    - Some searching algorithms have O(log n) time complexity
+    - Efficient sorting algorithms involve logarithms
+    - Recursion sometimes involves logarithmic space complexity
+
+*/
