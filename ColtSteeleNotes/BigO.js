@@ -1,4 +1,4 @@
-const {performance} = require('perf_hooks')
+import { performance } from 'perf_hooks';
 
 /*  - Big O Gives us a numeric value of how our code performs.
     - Good for discussing trade-offs between diff approaches (Not just "this is the best")
@@ -331,5 +331,18 @@ function double(arr){
     - Some searching algorithms have O(log n) time complexity
     - Efficient sorting algorithms involve logarithms
     - Recursion sometimes involves logarithmic space complexity
+
+*/
+
+
+
+
+/*
+            ------ RECAP ------
+    
+    - We use Big O to analyze PERFORMANCE
+    - Big O gives us high level understand of time or space complexity of an algorithm
+    - Precision doesn't matter with Big O -- ONLY General Trends ( linear? quadratic? constant? logarithmic?)
+    - Time or space complexity only depends on the algorithm not the computer running the algorithm (might take longer on my computer vs super computer)
 
 */
