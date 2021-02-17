@@ -17,12 +17,39 @@ function addUpTo(n) {
 }
 //seems slower
 
+/*
+    # of operations in Solution 1:
+    + (n additions)
+    = (n assignments)
+    (as n grows there's more operations)
+    n additions and assignments (from i++)
+    1 assignment (from total=0)
+    1 assignment (from i=1)
+    n comparisons ( i<=n)
+    
+
+    Regardless of the exact number, the general trend is "As n gorws, the # of operations grow roughly in proportion to n"
+
+
+*/
+
+
+
+
+
 
 //Solution 2
 // function addUpTo(n){
 //     return n * (n + 1)/2 
 // }
 // seems faster
+
+/*
+    # of operations in Solution 2:
+    * (multiplication), + (addition), / (division)
+    3
+
+*/
 
 
 let t1 = performance.now()
@@ -49,6 +76,11 @@ GIVES US THE TIME ELAPSED
     - Different machines will record different times (Results may vary)
     - The same machine will record different times too (Even by a little bit)
     - This is not precise enough, for fast algorithms speed measurement is not the best
+*/
 
 
+
+/* 
+    Instead of counting seconds, we can count NUMBER OF SIMPLE OPERATIONS THE COMPUTER HAS TO PERFORM
+    Calculate the # of operations it has to perform (the time is determined by # of Operations and it's constant)
 */
