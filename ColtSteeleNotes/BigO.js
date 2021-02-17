@@ -15,12 +15,15 @@ function addUpTo(n) {
     }
     return total;
 }
+//seems slower
 
 
 //Solution 2
 // function addUpTo(n){
 //     return n * (n + 1)/2 
 // }
+// seems faster
+
 
 let t1 = performance.now()
 console.log(addUpTo(100000000)) // gives me 6
@@ -39,3 +42,13 @@ GIVES US THE TIME ELAPSED
 /*  - Faster? ***
     - Less memory intensive ***
     - More readable? (the other two come at the expense of readablity) */
+
+
+/*
+        The Problem With Time
+    - Different machines will record different times (Results may vary)
+    - The same machine will record different times too (Even by a little bit)
+    - This is not precise enough, for fast algorithms speed measurement is not the best
+
+
+*/
