@@ -65,13 +65,28 @@ let values = [true, {}, [], 2, "awesome"]
         - Removing from beginning of array is O(n) -> Will HAVE to re-index all the elements in the array (shift)
 
     Access - O(1)
-    
+
     Searching - O(n)
 
 
 */
 
 /*
-            Big O of ARRAYS
+            Big O of ARRAY Methods
+            -----------------------
+    
+    - push -> O(1) CONSTANT
+    - pop -> O(1) CONSTANT
+
+    - shift -> O(n) linear (have to reindex)
+    - unshift -> O(n) linear (have to reindex)
+
+    - concat -> O(n) -> takes multiple arrays and merges together
+    - slice -> O(n) -> Returns copy of part of array or copy
+    - splice -> O(n) -> Removes and adds new elements from beginning or end or middle of array
+
+    - sort -> O(n log n)
+
+    -forEach/map/filter/reduce/etc.. -> O(n) -> looping over each element
 
 */
