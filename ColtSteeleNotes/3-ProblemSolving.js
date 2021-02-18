@@ -17,3 +17,23 @@
     It's the foundation for being a successful problem solver and developer
 */
 
+
+/*
+            How to get better at solving problems?
+    
+    1. DEVISE a plan for solving problems
+    2. MASTER common problem solving patterns (a lot of problems can be broken into certain categories, know the general recipe)
+*/
+
+
+
+/*
+            Problem Solving Strategies! (COMES WITH VIDEOS)
+
+    - Understand the Problem
+    - Explore Concrete Examples
+    - Break it down
+    - Solve / Simplify
+    - Look back and refactor
+
+*/
