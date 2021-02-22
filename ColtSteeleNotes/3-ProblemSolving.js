@@ -54,8 +54,28 @@
 */
 
 /*
-            PROBLEM SOLVING
-            ---------------
-
+            Explore Concrete Examples
+            -------------------------
+            coming up with examples help you understand the problem better. Examples help you check your work
+    
+    1. Start with simple examples
+    2. Progress to more complex examples
+    3. Explore examples with empty inputs
+    4. Explore examples with invalid inputs (happens all the time)
 */
+
+//EXAMPLES: Write a function which takes in a string a returns counts of each character in the string.
+
+// simple
+// charCount("aaaa"); // {a:4}
+// charCount("hello"); // {h:1, e:1, l:2, o:1}
+
+// complex: spaces, special characters, case sensitive?
+// charCount("my phone number is 182763")
+
+//explore with empty input -> problem with invalid input - edge cases
+
+// charCount(""); // what to return
+// charCount(); // what to return
+
 
