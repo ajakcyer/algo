@@ -79,3 +79,19 @@
 // charCount(); // what to return
 
 
+/*
+            Break it Down
+            -------------
+    1. BE VOCAL about thought process
+    2.  Explicitly write out the steps you need to take.
+    3. Forces you to THINK about the code before you write it and helps you catch misunderstandings. 
+*/
+
+// EXAMPLE: Write a function which taken in a string a returns counts of each character in the string. (same problem frmo before)
+
+function charCount(str){
+    // do something
+
+
+    // return an object with keys that are lowercase alphanumeric characters in the string. values should be counts for those characters in the string
+}
