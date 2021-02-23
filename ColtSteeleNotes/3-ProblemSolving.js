@@ -89,6 +89,8 @@
 
 // EXAMPLE: Write a function which taken in a string a returns counts of each character in the string. (same problem frmo before)
 
+charCount("Your PIN number is 1234!")
+
 function charCount(str){
     // do something
 
@@ -98,7 +100,12 @@ function charCount(str){
 
 function charCount(str){
     // make object to return at end
-    // loop over string
-    
+    // loop over string, for each character
+        // if the character is a num/letter AND a key in the object...add one to count
+        // if the character is a num/letter AND NOT in object...add it and set value to 1
+        // if character is something else (space, period...) don't do anything
+        
+
+
     // return object at end
 }
