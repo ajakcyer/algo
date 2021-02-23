@@ -95,3 +95,10 @@ function charCount(str){
 
     // return an object with keys that are lowercase alphanumeric characters in the string. values should be counts for those characters in the string
 }
+
+function charCount(str){
+    // make object to return at end
+    // loop over string
+    
+    // return object at end
+}
