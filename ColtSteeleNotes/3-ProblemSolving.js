@@ -109,3 +109,11 @@ function charCount(str){
 
     // return object at end
 }
+
+
+/*
+            Solve/Simplify
+            --------------
+            Solve the problem if you can, if you can't...solve a simpler problem.
+
+*/
