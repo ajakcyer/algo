@@ -114,6 +114,15 @@ function charCount(str){
 /*
             Solve/Simplify
             --------------
-            Solve the problem if you can, if you can't...solve a simpler problem.
+            Solve the problem if you can, if you can't...solve a simpler problem. Don't put all your eggs in one basket
 
+
+            Simplify
+            --------
+            - Find what's the most difficult part
+            - Ignore that part
+            - Write a simplified solution
+            - Incorporate it into the difficult part
 */
+
+// EXAMPLE: Write a function which taken in a string a returns counts of each character in the string. (same problem frmo before)
