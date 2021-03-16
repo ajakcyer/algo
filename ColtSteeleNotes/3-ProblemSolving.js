@@ -91,24 +91,24 @@
 
 charCount("Your PIN number is 1234!")
 
-function charCount(str){
-    // do something
+// function charCount(str){
+//     // do something
 
 
-    // return an object with keys that are lowercase alphanumeric characters in the string. values should be counts for those characters in the string
-}
+//     // return an object with keys that are lowercase alphanumeric characters in the string. values should be counts for those characters in the string
+// }
 
-function charCount(str){
-    // make object to return at end
-    // loop over string, for each character
-        // if the character is a num/letter AND a key in the object...add one to count
-        // if the character is a num/letter AND NOT in object...add it and set value to 1
-        // if character is something else (space, period...) don't do anything
+// function charCount(str){
+//     // make object to return at end
+//     // loop over string, for each character
+//         // if the character is a num/letter AND a key in the object...add one to count
+//         // if the character is a num/letter AND NOT in object...add it and set value to 1
+//         // if character is something else (space, period...) don't do anything
         
 
 
-    // return object at end
-}
+//     // return object at end
+// }
 
 
 /*
@@ -126,3 +126,27 @@ function charCount(str){
 */
 
 // EXAMPLE: Write a function which taken in a string a returns counts of each character in the string. (same problem frmo before)
+
+function charCount(str){
+    // make object to return at end
+
+    // loop over string, for each character
+        var result = {};
+
+        for (var i=0; i < str.length; i++){
+            var char = str[i]
+            if (result[char] > 0){
+                result[char]++
+            } else {
+                result[char] = 1
+            }
+        }
+
+        // if the character is a num/letter AND a key in the object...add one to count
+        // if the character is a num/letter AND NOT in object...add it and set value to 1
+        // if character is something else (space, period...) don't do anything
+        
+
+
+    // return object at end
+}
