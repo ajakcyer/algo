@@ -135,12 +135,14 @@ function charCount(str){
 
         for (var i=0; i < str.length; i++){
             var char = str[i].toLowerCase()
+            if (/[a-z0-9]/.test(char)){
             // if the character is a num/letter AND a key in the object...add one to count
-            if (result[char] > 0){
-                result[char]++
-            } else {
-                // if the character is a num/letter AND NOT in object...add it and set value to 1
-                result[char] = 1
+                if (result[char] > 0){
+                    result[char]++
+                } else {
+                    // if the character is a num/letter AND NOT in object...add it and set value to 1
+                    result[char] = 1
+                }
             }
         }
 
