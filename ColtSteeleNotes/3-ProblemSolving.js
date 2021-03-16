@@ -89,7 +89,7 @@
 
 // EXAMPLE: Write a function which taken in a string a returns counts of each character in the string. (same problem frmo before)
 
-charCount("Your PIN number is 1234!")
+// charCount("Your PIN number is 1234!")
 
 // function charCount(str){
 //     // do something
@@ -134,19 +134,21 @@ function charCount(str){
         var result = {};
 
         for (var i=0; i < str.length; i++){
-            var char = str[i]
+            var char = str[i].toLowerCase()
+            // if the character is a num/letter AND a key in the object...add one to count
             if (result[char] > 0){
                 result[char]++
             } else {
+                // if the character is a num/letter AND NOT in object...add it and set value to 1
                 result[char] = 1
             }
         }
 
-        // if the character is a num/letter AND a key in the object...add one to count
-        // if the character is a num/letter AND NOT in object...add it and set value to 1
         // if character is something else (space, period...) don't do anything
-        
+        return result;
 
 
     // return object at end
 }
+
+console.log(charCount("Your PIN number is 1234!"))
