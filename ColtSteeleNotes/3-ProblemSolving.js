@@ -127,31 +127,31 @@
 
 // EXAMPLE: Write a function which taken in a string a returns counts of each character in the string. (same problem frmo before)
 
-function charCount(str){
-    // make object to return at end
+// function charCount(str){
+//     // make object to return at end
 
-    // loop over string, for each character
-        var result = {};
+//     // loop over string, for each character
+//         var result = {};
 
-        for (var i=0; i < str.length; i++){
-            var char = str[i].toLowerCase()
-            if (/[a-z0-9]/.test(char)){
-            // if the character is a num/letter AND a key in the object...add one to count
-                if (result[char] > 0){
-                    result[char]++
-                } else {
-                    // if the character is a num/letter AND NOT in object...add it and set value to 1
-                    result[char] = 1
-                }
-            }
-        }
+//         for (var i=0; i < str.length; i++){
+//             var char = str[i].toLowerCase()
+//             if (/[a-z0-9]/.test(char)){
+//             // if the character is a num/letter AND a key in the object...add one to count
+//                 if (result[char] > 0){
+//                     result[char]++
+//                 } else {
+//                     // if the character is a num/letter AND NOT in object...add it and set value to 1
+//                     result[char] = 1
+//                 }
+//             }
+//         }
 
-        // if character is something else (space, period...) don't do anything
-        return result;
+//         // if character is something else (space, period...) don't do anything
+//         return result;
 
 
-    // return object at end
-}
+//     // return object at end
+// }
 
 console.log(charCount("Your PIN number is 1234!"))
 
@@ -168,3 +168,24 @@ console.log(charCount("Your PIN number is 1234!"))
     - Can you think of other ways to refactor
     - How have other people solved this problem?
 */
+
+function charCount(str){
+    // make object to return at end
+
+    // loop over string, for each character
+        var result = {};
+
+        for (var char of str){
+            char = char.toLowerCase()
+            if (/[a-z0-9]/.test(char)){
+            // if the character is a num/letter AND a key in the object...add one to count
+                result[char] = ++result[char] || 1
+            }
+        }
+
+        // if character is something else (space, period...) don't do anything
+        return result;
+
+
+    // return object at end
+}
