@@ -192,4 +192,10 @@ function charCount(str){
 
 function isAlphaNumeric(char){
     var code = char.charCodeAt(0);
+    if (!(code > 47 && code < 58) &&  // numeric (0-9)
+        !(code > 64 && code < 91) &&  // uppercase alphabets (A-Z)
+        !(code > 96 && code < 123)){  // lowercase alphabets (a-z)
+        return false // if the letter in not between
+    }
+    return true // if the letter IS in between
 }
