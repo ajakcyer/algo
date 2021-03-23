@@ -177,7 +177,8 @@ function charCount(str){
 
         for (var char of str){
             char = char.toLowerCase()
-            if (/[a-z0-9]/.test(char)){
+            // if (/[a-z0-9]/.test(char)){
+            if (isAlphaNumeric(char)){
             // if the character is a num/letter AND a key in the object...add one to count
                 result[char] = ++result[char] || 1
             }
