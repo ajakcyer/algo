@@ -189,3 +189,7 @@ function charCount(str){
 
     // return object at end
 }
+
+function isAlphaNumeric(char){
+    
+}
