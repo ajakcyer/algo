@@ -200,3 +200,22 @@ function isAlphaNumeric(char){
     }
     return true // if the letter IS in between
 }
+
+
+/*              RECAP for Problem Solving
+                -------------------------
+    - Understand the Problem
+        Ask clarifying questions
+
+    - Explore Concrete Examples
+        Understand inputs/outputs contraints/handling errors
+
+    - Break it Down
+        Psuedocode or write steps for your gameplan. Know where you're going before you just start typing code
+
+    - Solve/Simplify
+        Try to solve what you can in a simple way, plug in the more difficult parts later
+
+    - Look Back and Refactor
+        There's usually room to refactor, look at others solutions
+*/
