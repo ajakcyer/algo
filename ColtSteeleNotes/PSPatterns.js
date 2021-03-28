@@ -40,6 +40,12 @@
 
 function same(arrayOne, arrayTwo){
 
+    // square the values of arrayOne
+    
+    // compare the squared values of arrayOne to see if the values are in arrayTwo
 
     
+
+
+    // returns true or false
 }
