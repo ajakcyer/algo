@@ -59,9 +59,13 @@ function same(arrayOne, arrayTwo){
             squaredValues[numb] = 1
         }
     }
-    console.log(squaredValues)
 
+    // if every object key values doesn't equal 1 then return false -- otherwise return true
+    // console.log(squaredValues)
 
+    console.log(Object.values(squaredValues).every(el => el == 1))
+
+    // console.log("true")
     // returns true or false
 }
 
