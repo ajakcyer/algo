@@ -44,8 +44,25 @@ function same(arrayOne, arrayTwo){
     
     // compare the squared values of arrayOne to see if the values are in arrayTwo
 
-    
+    let squaredValues = {}
+
+    for (let i=0; i < arrayOne.length; i++){
+        squaredValues[(arrayOne[i] * arrayOne[i])] = 0
+    }
+
+    // console.log(squaredValues)
+
+    for (let j=0; j < arrayTwo.length; j++){
+        let numb = arrayTwo[j].toString()
+        
+        if (numb in squaredValues){
+            squaredValues[numb] = 1
+        }
+    }
+    console.log(squaredValues)
 
 
     // returns true or false
 }
+
+same([1,2,3], [4,1,9])
