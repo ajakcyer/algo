@@ -40,6 +40,10 @@
 
 function same(arrayOne, arrayTwo){
 
+    if (arrayOne.length !== arrayTwo.length){
+        return false
+    }
+
     // square the values of arrayOne
     
     // compare the squared values of arrayOne to see if the values are in arrayTwo
@@ -63,10 +67,10 @@ function same(arrayOne, arrayTwo){
     // if every object key values doesn't equal 1 then return false -- otherwise return true
     // console.log(squaredValues)
 
-    console.log(Object.values(squaredValues).every(el => el == 1))
+    return Object.values(squaredValues).every(el => el == 1)
 
-    // console.log("true")
+
     // returns true or false
 }
 
-same([1,2,3], [4,1,9,9])
+same([1,2,3], [4,4,1])
