@@ -56,7 +56,7 @@ function same(arrayOne, arrayTwo){
         let numb = arrayTwo[j].toString()
         
         if (numb in squaredValues){
-            squaredValues[numb] = 1
+            squaredValues[numb]++
         }
     }
 
@@ -69,4 +69,4 @@ function same(arrayOne, arrayTwo){
     // returns true or false
 }
 
-same([1,2,3], [4,1,9])
+same([1,2,3], [4,1,9,9])
