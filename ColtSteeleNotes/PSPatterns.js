@@ -38,7 +38,7 @@
     same([1,2,1], [4,4,1]) returns false (must be same freq)
 */
 
-function same(arrayOne, arrayTwo){
+function mySame(arrayOne, arrayTwo){
 
     if (arrayOne.length !== arrayTwo.length){
         return false
@@ -73,4 +73,13 @@ function same(arrayOne, arrayTwo){
     // returns true or false
 }
 
-same([1,2,3], [4,4,1])
+mySame([1,2,3], [4,4,1])
+
+/*          Colt's version          */
+function same(arr1, arr2){
+    if(arr1.length !== arr2.length){
+        return false;
+    }
+
+    
+}
