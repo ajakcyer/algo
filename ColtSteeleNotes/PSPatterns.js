@@ -110,3 +110,24 @@ function same(arr1, arr2){
 }
 
 same([1,2,3], [4,4,1])
+
+
+
+/*
+                EXAMPLE 2
+        Given two strings, write a function to determine if the second string is an anagram of the first.
+        An anagram is a word, phrase, or name formed by rearranging the letters of another, such as
+        "cinema", formed from "iceman"
+    
+        validAnagram('', '') -> true
+        validAnagram('aaz', 'zza') -> false
+        validAnagram('anagram', 'nagaram') -> true
+        validAnagram('awesome', 'awesom') -> false
+
+        -- all inputs are single words
+            - no space, periods, punctionations, numbers, and all lowercase
+*/
+
+function validAnagram(string1, string2){
+
+}
