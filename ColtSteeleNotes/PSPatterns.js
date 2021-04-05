@@ -109,7 +109,7 @@ function same(arr1, arr2){
 
 }
 
-same([1,2,3], [4,4,1])
+// same([1,2,3], [4,4,1])
 
 
 
@@ -133,9 +133,19 @@ function validAnagram(string1, string2){
     // create an object with each letter of the string1 being the key with the number of times the letter is in the string
 
     // 1. create empty object
+    let stringFreq1 = {}
+    let stringFreq2 = {}
 
     // 2. loop through string1 with logic
-    
+    for (letter of string1){
+        stringFreq1[letter] = (stringFreq1[letter] || 0) + 1
+    }
+
+    for (letter of string2){
+        stringFreq2[letter] = (stringFreq2[letter] || 0 ) + 1
+    }
+
+    console.log(stringFreq2)
 
 
     // return true or false
