@@ -130,8 +130,15 @@ same([1,2,3], [4,4,1])
 
 function validAnagram(string1, string2){
 
-    // do something
+    // create an object with each letter of the string1 being the key with the number of times the letter is in the string
+
+    // 1. create empty object
+
+    // 2. loop through string1 with logic
+    
 
 
     // return true or false
 }
+
+validAnagram('anagram', 'nagaram')
