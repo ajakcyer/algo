@@ -130,4 +130,8 @@ same([1,2,3], [4,4,1])
 
 function validAnagram(string1, string2){
 
+    // do something
+
+
+    // return true or false
 }
