@@ -81,5 +81,9 @@ function same(arr1, arr2){
         return false;
     }
 
+    let frequencyCounter1 = {};
+    let frequencyCounter2 = {};
+
     
+
 }
