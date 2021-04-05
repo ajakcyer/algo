@@ -147,6 +147,15 @@ function validAnagram(string1, string2){
 
     console.log(stringFreq2)
 
+    // 3. compare the key values in both objects to see if they have the same key and then if they have the same values
+
+    for (key in stringFreq1){
+        if (!(key in stringFreq2)){
+            // if the key in stringFreq1 is not a key in stringFreq 2 return false
+            return false
+        }
+    }
+
 
     // return true or false
 }
