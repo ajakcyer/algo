@@ -130,6 +130,12 @@ function same(arr1, arr2){
 
 function validAnagram(string1, string2){
 
+
+    // if the string lengths are not the same then they aren't anagrams
+    if(string1.length !== string2.length){
+        return false
+    }
+
     // create an object with each letter of the string1 being the key with the number of times the letter is in the string
 
     // 1. create empty object
@@ -145,7 +151,7 @@ function validAnagram(string1, string2){
         stringFreq2[letter] = (stringFreq2[letter] || 0 ) + 1
     }
 
-    console.log(stringFreq2)
+    // console.log(stringFreq2)
 
     // 3. compare the key values in both objects to see if they have the same key and then if they have the same values
 
@@ -154,10 +160,15 @@ function validAnagram(string1, string2){
             // if the key in stringFreq1 is not a key in stringFreq 2 return false
             return false
         }
+
+        if (stringFreq1[key] !== stringFreq2[key]){
+            // if the key/value of stringFreq1 is not the same as the key/value of stringFreq2 then return false
+            return false
+        }
     }
 
-
+    return true
     // return true or false
 }
 
-validAnagram('anagram', 'nagaram')
+console.log(validAnagram('anagram', 'nagaram'))
