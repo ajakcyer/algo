@@ -211,7 +211,7 @@ sumZero([1,2,3]) -> undefined
 // A naive approach would have us having a loop inside of a loop
 
 // Approach #1) In this way we are using 2 pointers. One is going from the left side and the other is going from the right side.
-function sumZero1(arr){
+function sumZero(arr){
     let left = 0; // starting at first index of arr
     let right = arr.length - 1;  // starting at last index of arr
     while(left < right){
