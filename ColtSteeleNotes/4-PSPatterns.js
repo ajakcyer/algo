@@ -194,7 +194,7 @@ console.log(validAnagram('anagram', 'nagaram'))
 
 /*
 
-EXAMPLE)
+EXAMPLE) sumZero
 
 Write a function called sumZero which accepts a sorted array (lowest to highest) of integers.
 The function should find the first pair where the sum is 0. Return an
@@ -225,3 +225,20 @@ function sumZero(arr){
         }
     }
 }
+
+
+
+/*
+
+EXAMPLE) countUniqueValues
+
+Implement a function called countUniqueValues which accepts a sorted array,
+and counts the unique values in the array. There can be negative numbers in
+the array, but it will always be sorted
+
+countUniqueValues([1,1,1,1,1,2]) --> 2
+countUniqueValues([1,2,3,4,4,4,9,2,5]) --> 6
+countUniqueValues([]) --> 0
+countUniqueValues([-2,-1,-1,0,1]) --> 4
+
+*/
