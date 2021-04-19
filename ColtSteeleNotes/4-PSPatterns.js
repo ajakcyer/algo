@@ -249,7 +249,11 @@ function countUniqueValues(arr){
    let left = 0;
    let right = arr.length - 1
 
-   
+   let total = 0;
+
+   // if adjacent number is the same as the current number then skip and go to next index, if they are different add 1 to the total
+
+   // while the left side is smaller than the right side we should keep skipping through the array
 
     // return a number of total unique values
 }
