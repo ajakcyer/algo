@@ -242,3 +242,11 @@ countUniqueValues([]) --> 0
 countUniqueValues([-2,-1,-1,0,1]) --> 4
 
 */
+
+function countUniqueValues(arr){
+    // check the array from 0th index to the nth index
+
+   
+
+    // return a number of total unique values
+}
