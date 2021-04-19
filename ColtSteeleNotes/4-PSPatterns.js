@@ -207,3 +207,21 @@ sumZero([1,2,3]) -> undefined
 
 
 */
+
+// A naive approach would have us having a loop inside of a loop
+
+// Approach #1) In this way we are using 2 pointers. One is going from the left side and the other is going from the right side.
+function sumZero1(arr){
+    let left = 0; // starting at first index of arr
+    let right = arr.length - 1;  // starting at last index of arr
+    while(left < right){
+        let sum = arr[left] + arr[right]
+        if(sum === 0){
+            return [arr[left], arr[right]]
+        } else if (sum > 0){
+            right--;
+        } else if (sum < 0){
+            left++
+        }
+    }
+}
