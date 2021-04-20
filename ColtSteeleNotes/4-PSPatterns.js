@@ -171,7 +171,7 @@ function validAnagram(string1, string2){
     // return true or false
 }
 
-console.log(validAnagram('anagram', 'nagaram'))
+// console.log(validAnagram('anagram', 'nagaram'))
 
 
 // --------------------------------------
@@ -270,7 +270,11 @@ function countUniqueValues(arr){
        }
     }
 
-    return i + 1
+    if (arr.length !== 0){
+        return i + 1
+    } else {
+        return 0
+    }
 
 
 //    console.log(arr)
@@ -282,4 +286,4 @@ function countUniqueValues(arr){
     // return a number of total unique values
 }
 
-countUniqueValues([1,1,1,2,3,3,4,4,5,6])
+console.log(countUniqueValues([]))
