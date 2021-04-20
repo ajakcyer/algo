@@ -244,16 +244,41 @@ countUniqueValues([-2,-1,-1,0,1]) --> 4
 */
 
 function countUniqueValues(arr){
-    // check the array from 0th index to the nth index
+    // check the array from left side with j checking if it's the same number
+    /*
+                 i
+        [1,1,1,2,3,3,4,4,5,6]
+                         j
+    */
 
-   let left = 0;
-   let right = arr.length - 1
+   let i = 0;
+   let j = 1;
 
-   let total = 0;
+   // if arr[i] === arr[j] then keep i where it is and move j++
+   // if arr[i] !== arr[j] then move i++ and make arr[i] === arr[j] and then j++
 
-   // if adjacent number is the same as the current number then skip and go to next index, if they are different add 1 to the total
+   while (j < arr.length){
+       if(arr[i] === arr[j]){
+           j++
+        //    console.log("match")
+       } else if (arr[i] !== arr[j]){
+        //    console.log("i is", i)
+           i++
+           arr[i] = arr[j]
+           j++
+        //    console.log("i is now", i)
+       }
+    }
+    return i
 
-   // while the left side is smaller than the right side we should keep skipping through the array
+
+//    console.log(arr)
+//    console.log(j)
+//    console.log(arr.length)
+//    console.log(i + 1)
+
 
     // return a number of total unique values
 }
+
+countUniqueValues([1,1,1,2,3,3,4,4,5,6])
