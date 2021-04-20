@@ -269,7 +269,8 @@ function countUniqueValues(arr){
         //    console.log("i is now", i)
        }
     }
-    return i
+
+    return i + 1
 
 
 //    console.log(arr)
