@@ -301,5 +301,11 @@ console.log(countUniqueValues([]))
 
     Very useful for keep track of a subset of data in an array/string etc.
 
+*/
 
+// EXAMPLE:
+/*
+    Here is a string "hellothere"
+
+    find the longest sequence of unique characters
 */
