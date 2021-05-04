@@ -301,11 +301,14 @@ console.log(countUniqueValues([]))
 
     Very useful for keep track of a subset of data in an array/string etc.
 
+    Here is a string "hellothere"
+    find the longest sequence of unique characters
 */
 
-// EXAMPLE:
 /*
-    Here is a string "hellothere"
+    Example:
 
-    find the longest sequence of unique characters
+    Write a function called maxSubarraySum which accepts an array of integers and a number called n.
+    The function should calculate the maximum sum of n consecutive elements in that array.
+
 */
