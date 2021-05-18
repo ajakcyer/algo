@@ -9,6 +9,12 @@ function reverse(x){
     //stringify the x, split, reverse, rejoin it and return it to a number with parseInt
     let newNum = parseInt(x.toString().split("").reverse().join("")) * Math.sign(x)
 
+    // console.log(newNum)
+    if (newNum > (Math.pow(2, 31) -1) || newNum < Math.pow(-2, 31)){
+        return 0
+    } else {
+        return newNum
+    }
     
     //return the reversed number
 }
