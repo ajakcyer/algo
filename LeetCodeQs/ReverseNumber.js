@@ -5,7 +5,11 @@
 */
 
 function reverse(x){
+
+    //stringify the x, split, reverse and rejoin it
     
+
+    //return the reversed number
 }
 
 console.log(reverse(123))
