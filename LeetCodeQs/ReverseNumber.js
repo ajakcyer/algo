@@ -6,9 +6,10 @@
 
 function reverse(x){
 
-    //stringify the x, split, reverse and rejoin it
-    
+    //stringify the x, split, reverse, rejoin it and return it to a number with parseInt
+    let newNum = parseInt(x.toString().split("").reverse().join("")) * Math.sign(x)
 
+    
     //return the reversed number
 }
 
