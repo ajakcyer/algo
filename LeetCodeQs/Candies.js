@@ -7,18 +7,20 @@
 function kidsWithCandies(candies, extraCandies){
 
     // create empty array to push true/false into
+    let greatestCandies = []
  
     // give each kid in the array all the candies and compare if they have the most compared to the other kids
         // replace console logs to push true/false into array
     for (kid of candies){
         if (kid + extraCandies >= Math.max(...candies)){
-            console.log("I have the most")
+            greatestCandies.push(true)
         } else {
-            console.log("I do not have the most")
+            greatestCandies.push(false)
         }
     }
 
     // return an array with true/false values for each kid in the array if they can have the greatest # of candies if given the extraCandies
+    return greatestCandies
 
 }
 
