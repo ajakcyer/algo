@@ -5,8 +5,11 @@
 */
 
 function kidsWithCandies(candies, extraCandies){
+
+    // create empty array to push true/false into
  
     // give each kid in the array all the candies and compare if they have the most compared to the other kids
+        // replace console logs to push true/false into array
     for (kid of candies){
         if (kid + extraCandies >= Math.max(...candies)){
             console.log("I have the most")
