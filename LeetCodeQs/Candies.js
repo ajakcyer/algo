@@ -6,6 +6,8 @@
 
 function kidsWithCandies(candies, extraCandies){
  
+    // give each kid in the array all the candies and compare if they have the most compared to the other kids
+
     // return an array with true/false values for each kid in the array if they can have the greatest # of candies if given the extraCandies
 
 }
